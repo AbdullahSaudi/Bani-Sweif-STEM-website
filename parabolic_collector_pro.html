@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icons/cccc.icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Applied Engineering Journal Bani Sweif STEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="img/logo/blogo.png" class="logo" alt=""></a> 
+
+        <div>
+            <ul id="navbar">
+                <i id="bar-close" class="fa-solid fa-x"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="magor.html">Major</a></li>
+                <li><a href="competition.html">Competition</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+		        <!-- <button>Sign in</button>
+                <a class="log" href="#">Login</a> -->
+            </ul>
+            <img id="bar" src="img/parts/btn2.png" alt="">
+        </div>
+    </section>
+
+    <section id="major-post">
+        <h3>Parabolic collector</h3>
+
+        <p>
+            The project aims to utilize solar energy in Egypt and convert it to a more usable form. This useable form is hot water that may reach vaporization or is about to vaporize. From this vaporized water, high-pressure steam can be provided to power a turbine that generates electricity. <br><br><br>
+            First, the wood was cut into a parabolic shape (the shape of the letter "U") using the equation (𝑦2 = 4𝑓𝑥)). After that, we constructed a rectangular stand with two vertical pieces of wood opposite to each other. Then a sheet of paper covered with aluminum was wrapped along the parabola circumference and fixed using screws. After the two servos were held to the vertical stands, the parabola was fixed on them. Then, we coiled part of the copper tube to fit the greatest area possible inside the metal container, and we let the other part pass straight through the parabola to be placed in the focal line. A metal cone was connected to the water container to increase the water vapor pressure. Finally, we used the Arduino to control the rate by which the two servos rotate and the LDR sensor to decide if the sky is clear or cloudy. Based on that, the sensor will give the order to the system either to continue working or to turn off the whole system. Also, we used a temperature sensor to measure the water temperature repeatedly. <br><br> 
+            The parabola collects only rays parallel to the principal axis (the line connects the parabola center and its focus). Thus, a tracking mechanism was required to follow the sun and make the sun rays always parallel to the principal axis. In this way, sunrays will always be collected in focus, therefore, reaching higher temperatures. So, two servo motors were used to make the parabola track the sun by rotating (0.25°) every minute. <br><br>
+            To know the amount of the input energy, which is the solar radiation energy incident on the parabola, we used this law, Solar radiation energy (𝐸𝑆) = normal solar radiation per unit area (𝑮𝒃𝒏) × parabola area (𝑨𝒑) × time (𝒕). Values of 𝑮𝒃𝒏 were taken from Fig (5). As for the output energy, which is thermal energy delivered to water, it can be calculated by the law, Thermal Energy (𝑄) = water mass (𝒎) × water specific heat capacity (𝑪𝒘) ×change in temperature (𝜟𝑻). <br><br>
+            Communication played a significant role in the project. Communication helped in three main processes: sun tracking, auto turn-off, and repeated water temperature measurement. Sun tracking was done using two servo motors to rotate the parabola by (0.25°) every minute, which is the same angular velocity as the sun. The auto turn-off mechanism uses an LDR sensor to measure light intensity. Then, if the light intensity was less than (75 w/m2), the system will not work as the solar radiation is not sufficient to power it. The temperature sensor was used repeatedly to measure the water temperature and send the measurements to the control unit. This will help in managing the project and for statistical purposes. <br><br>
+            Furthermore, solar energy will not run out one day, and it does not harm the environment at all. So, we can say confidently that our project makes a great step in the alternative energy future, therefore, and in all economic, commercial, and service fields that serve the future of Egypt. <br><br>
+        </p>
+
+        <div class="btn">
+            <a class="orange" href="projects.html">Go to projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <img src="img/logo/cccc.png" alt="">
+        </div>
+
+        <div class="footer-col">
+            <h3>Competition</h3>
+            <li>coming soon</li>
+            <li>coming soon</li>
+            <li>coming soon</li>
+            <li>coming soon</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>About</h3>
+            <a href="about.html #about-container"><li>About us</li></a>
+            <a href="about.html #about-magor"><li>Our Major</li></a>
+            <a href="about.html #about-goals"><li>Our Goals</li>
+            <a href="about.html #about-goals"><li>Our Partners</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Team</h3>
+            <a href="team.html"><li>High boards</li></a>
+            <a href="team.html"><li>Catagory</li></a>
+            <a href="team.html"><li>Community</li></a>
+            <a href="team.html"><li>Members</li></a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <a href="contact.html"><li>Phone</li></a>
+            <a href="contact.html"><li>Email</li></a>
+            <a href="contact.html"><li>Massage</li></a>
+            <a href="contact.html"><li>Social media</li></a>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2022 Bani Sweif STEM All Rights Reserved | Made with <i class="fa-solid fa-heart heart"></i> by abdullahmohammedsaudi@gmail.com</p>
+
+            <div class="pro-links">
+                <a href="https://www.facebook.com/profile.php?id=100081303881045"><i class="fab fa-facebook-f"></i></a>
+                <i class="fab fa-instagram"></i>
+                <a href="https://www.linkedin.com/in/ae-journal-bani-sweif-stem-1969a1243"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="saudi">
+            <div class="saudi_logo">
+                <img src="img/logo/saudi_logo.png" alt="">
+            </div>
+            <div class="saudi_links">
+                <a href="https://wa.me/qr/ILMDIJFMUGNNE1"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

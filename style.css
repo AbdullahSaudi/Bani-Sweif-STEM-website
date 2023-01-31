@@ -32,6 +32,11 @@ h4{
     color: #222;
 }
 
+h5{
+    font-size: 18px;
+    color: #222;
+}
+
 h6{
     font-weight: 700;
     font-size: 12px;
@@ -98,7 +103,7 @@ body{
     z-index: 999;
     width: 100%;
     background-color: #fff;
-    padding: 1vw 8vw;  
+    padding: 1vw 8vw;  /*What's the vw*/
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -114,7 +119,7 @@ body{
 #header div ul{
     display: flex;
     justify-content: flex-end;
-    align-items: center;  
+    align-items: center;
 }
 
 #header div ul li{
@@ -193,7 +198,7 @@ body{
 /** Home Page **/
 
 #home{
-    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/bg2.jpg"); 
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/bg2.jpg"); /*understand this line!*/
     width: 100%;
     height: 100vh;
     padding-top: 40px;
@@ -260,7 +265,7 @@ body{
     padding: 5vw 8vw 0 8vw; /*top left bottom right*/
     text-align: center;
 }
- 
+
 #features h2{
     padding-top: 40px;
 }
@@ -312,7 +317,7 @@ body{
 /** Project Section **/
 
 #projects{
-    padding: 8vw 8vw 0 8vw;
+    padding: 8vw 8vw 4vw 8vw;
     text-align: center;
 }
 
@@ -411,6 +416,13 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+
+#register .i .time .date span{
+    color: #fff;
+}
+
+
+
 #register .i .btn{
     display: flex;
     text-decoration: none;
@@ -432,7 +444,6 @@ body{
 }
 
 /*Form part*/
- 
 #register .form{
     background: #fff;
     border-radius: 4px;
@@ -603,7 +614,7 @@ body{
 /** The Footer **/
 
 footer {
-    padding: 8vw;
+    padding: 8vw 8vw 4vw 8vw;
     background-color: #101c32;
     display: flex;
     justify-content: space-around;
@@ -636,6 +647,10 @@ footer li:hover{
     color: rgb(241, 240, 245);
 }
 
+footer .footer-col a{
+    text-decoration: none;
+}
+
 footer .footer-col img{
     width: 100%;
     height: 24vh;
@@ -660,7 +675,7 @@ footer .copyright .pro-links i{
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 
 footer .copyright .pro-links i:hover{
@@ -672,18 +687,51 @@ footer .copyright p{
     color:#fff;
 }
 
+footer .copyright p i{
+    color: #0151ad;
+}
+
+footer .copyright p a{
+    color: #0151ad;
+    text-decoration: none;
+}
+
+footer .saudi {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .saudi .saudi_logo img{
+    width: 220px;
+    height: auto;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+footer .saudi .saudi_links i{
+    padding: 19px 19px;
+    background-color: #128c7e;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+footer .saudi .saudi_links i:hover{
+    background-color: #10cbb5;
+}
+
 
 
 /*** !Team Page! ***/
 /** Team Home Page Section **/
 
 #team-home{
-    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/team-bg6.jpg");
-    width: 100%;
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/team.jpg"); /*understand this line!*/    width: 100%;
     height: 60vh;
     padding-top: 40px;
-    background-size: cover;
-    background-position:center;
+    background-size: contain;
+    background-position:top;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -696,18 +744,21 @@ footer .copyright p{
 }
 
 /**Teams Section**/
-
-#teams .main-boxs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#teams {
+    padding: 4vw;
 }
 
 #teams  h2{
-    color: rgb(46, 46, 46);
+    color: #29303B;
     font-size: 38px;
     text-align: left;
     margin: 100px;
+}
+
+#teams .main-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #teams .box{
@@ -736,6 +787,7 @@ footer .copyright p{
 #teams .box .box-img img{
     width: 250px;
     height: 379px;
+    margin-bottom: 50px;
     border-radius: 5px;
     border: 2px solid #000;
 }
@@ -808,7 +860,672 @@ footer .copyright p{
     background-color: #fdc93b;
 }
 
+/*** !About Page! ***/
+/** About Home Page Section **/
+#about-home{
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/about_Photo.jpg"); /*understand this line!*/    
+    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+#about-home h2{
+    color: #ffff;
+}
+
+/** About main Section **/
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 4vw;
+}
+
+#about-container .about-img{
+    width: 60%;
+}
+
+#about-container .about-img img{
+    width: 100%;
+    height: 60%;
+    border-radius: 50px;
+}
+
+#about-container .about-text{
+    width: 80%;
+    padding: 60px;
+}
+
+#about-container .about-text h2{
+    font-size: 38px;
+    color: #29303B;
+}
+
+#about-container .about-text p{
+    color: #686F7A;
+    font-weight: 400;
+}
+
+#about-container .about-text .about-fe{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#about-container .about-text .about-fe img{
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+#about-container .about-text .about-fe .text-fe{
+    width: 90%;
+}
+
+#about-container .about-text .about-fe .text-fe h4{
+    color: #29303B;
+}
+
+/** About goals Section **/
+
+#about-goals{
+    padding: 4vw;
+    text-align: center;
+}
+
+#about-goals h2{
+    font-size: 38px;
+    color: #29303B;
+}
+
+#about-goals p{
+    color: #686F7A;
+    font-weight: 400;
+}
+
+#about-goals .goals-img{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about-goals .goals-img img{
+    width: 200px;
+    height: auto;
+    margin: 0px auto 50px auto;
+}
+
+/** About magor Section **/
+
+#about-magor{
+    padding: 4vw;
+    text-align: center;
+}
+
+#about-magor h2{
+    font-size: 38px;
+    color: #29303B;
+}
+
+#about-magor p{
+    color: #686F7A;
+    font-weight: 400;
+}
+
+#about-magor .cards-about-major{
+    margin-bottom: 30px;
+}
+
+#about-magor .section-p1 {
+    padding: 40px 10px;
+}
+
+
+#about-magor .magor-button{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(241,131,19,255);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+#about-magor .magor-button:hover{
+    color: black;
+    font-weight: 700;
+}
+
+/** About achievement Section **/
+
+#about-achi{
+    padding: 4vw;
+    text-align: center;
+}
+
+#about-achi h2{
+    font-size: 38px;
+    color: #29303B;
+}
+
+#about-achi p{
+    color: #686F7A;
+    font-weight: 400;
+}
+
+#about-achi .magor-button{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(241,131,19,255);
+    margin-top: 50px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+#about-achi .magor-button:hover{
+    font-size: 19px;
+}
+
+/*achievements cards*/
+
+#about-achi .ill-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#about-achi .ill{
+    width: 21%;
+    min-height: 550px;
+    min-width: 250px;
+    padding: 10px 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid #cce7d0;
+    border-radius: 100% 0% 100% 0% / 20% 89% 11% 80%;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
+    background: rgba(241,131,19,255);
+    margin: 15px 0;
+    transition: 0.2s ease /****/;
+    position: relative;
+}
+
+#about-achi .ill:hover{
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.3);
+}
+
+#about-achi .ill p{
+    color: rgb(55, 55, 55);
+}
+
+#about-achi .ill i{
+    margin-top: 15px;
+    font-size: 62px;
+    color: #fff;
+}
+
+
+/*** !Mager Section! ***/
+/** Mager Home Page Section **/
+#magor-home{
+    background-image:url("img/bg/major_photo.jpg"); /*understand this line!*/    
+    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#magor-home h2 {
+    color: #fff;
+}
+
+/** The mager cards **/
+#magor-cards {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#magor-cards h2 {
+    font-size: 41px;
+}
+
+#magor-cards .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#magor-cards .pro{
+    width: 21%;
+    min-width: 250px;
+    background-color: transparent;
+    padding: 10px 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.1);
+    margin: 25px auto;
+    transition: 0.2s ease /****/;
+    position: relative;
+}
+
+#magor-cards .pro:hover{
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
+}
+
+#magor-cards .pro h4{
+    font-size: 18px;
+    color: #4f4f4f;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s ease;
+}
+
+#magor-cards .pro:hover h4{
+    color: #e0a400;
+}
+
+#magor-cards .pro a {
+    text-decoration: none;
+}
+
+/** posts style **/
+#major-post h3 {
+    color: #262626;
+    padding: 50px;
+    padding-top: 150px;
+}
+
+#major-post h4 {
+    color: #262626;
+    padding: 20px 50px;
+}
+
+#major-post h5 {
+    color: #262626;
+    padding: 15px 50px;
+}
+
+#major-post p {
+    padding-left: 50px;
+    width: 70%;
+    color: #5a5e67;
+}
+
+#major-post a{
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 0.8rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+#major-post .btn {
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+#major-post .btn .orange{
+    color: #fff;
+    background-color: rgba(241,131,19,255);
+    transition: 0.3s ease;
+}
+
+#major-post .btn .orange:hover{
+    color: #fff;
+    background-color: rgb(43, 43, 161);
+}
+
+
+/*** !Projects Page! ***/
+/** Projects Home Page Section **/
+
+#project-home{
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/project_photo.jpg"); /*understand this line!*/    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#project-home h2{
+    color: #ffff;
+}
+
+.rev-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rev-cont .rev-button-org {
+    margin-right: 10px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(43, 43, 161);
+    transition: 0.3s ease;
+}
+
+.rev-cont .rev-button-org:hover{
+    color: #fff;
+    background-color: rgba(241,131,19,255);
+}
+
+.rev-cont .rev-button-blue {
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(43, 43, 161);
+    transition: 0.3s ease;
+}
+
+.rev-cont .rev-button-blue:hover{
+    color: #fff;
+    background-color: rgba(241,131,19,255);
+}
+
+/*** !Contact Page! ***/
+/** Contact info part **/
+#contact-home{
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/project-bg1.jpg"); /*understand this line!*/    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-home h2{
+    color: #ffff;
+}
+
+#contact {
+    padding: 8vw 8vw 0vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contact .getinf{
+    width: 350px;
+}
+
+#contact .getinf h3{
+    color: #2c234d;
+    font-weight: 800;
+    line-height: .8;
+    margin-bottom: 16px;
+}
+
+#contact .getinf p{
+    color: #686875;
+    line-height: 24px;
+    margin-bottom: 33px;
+    padding-bottom: 25px;
+    border-bottom:1px solid #e5e4ed;
+}
+
+#contact .getinf h4{
+    color: #2c234d;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+#contact .getinf .getinf_details div{
+    display: flex;
+}
+
+#contact .getinf .getinf_details .info_icon{
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 20px;
+    color: #4e30e2;
+}
+
+#contact .getinf .getinf_details div p{
+    font-size: 14px;
+    border-bottom: none;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+#contact .getinf .getinf_details .pro-links i{
+    padding: 14px 14px;
+    margin-right: 15px;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #000;
+    transition: 0.3 ease;
+}
+
+#contact .getinf .getinf_details .pro-links i:hover{
+    background: #5d7185;
+    color: #fff;
+}
+
+/** Contact form part **/
+#contact .form{
+    width: 60%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#contact .form h4{
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+#contact .form p{
+    color: #686875;
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+
+#contact .form .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact .form .form-row input{
+    width: 48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form .form-colmun input,
+#contact .form .form-colmun textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form button{
+    font-size: .9rem;
+    background: rgb(21, 21, 100);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 13px 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/** Competition Page **/
+/*Home Page */
+#comp-home{
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/bg/comp_demo2.jpg"); /*understand this line!*/    
+    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Info Section*/
+#comp-home h2 {
+    color: #ffff;
+}
+
+#comp-info{
+    padding: 4vw;
+}
+
+#comp-info h3{
+    padding-bottom: 20px;
+}
+
+#comp-info h4{
+    font-size: 24px;
+    color: #29303B;
+}
+
+#comp-info .qoute {
+    font-weight: 600;
+}
+
+/*Features Section*/
+#comp-features{
+    padding: 4vw;
+    text-align: center;
+}
+
+#comp-features h2{
+    font-size: 38px;
+    color: #29303B;
+}
+
+#comp-features p{
+    color: #626262;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px;
+    margin: 0px;
+    background-color: #ffe1b5;
+    border-radius: 10px;
+}
+
+#comp-features .featurers-img{
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#comp-features .featurers-img img{
+    width: 150px;
+    height: auto;
+    margin: 0px auto 0px auto;
+}
+
+/* Reasons Sction */
+#comp-reasons{
+    padding: 4vw;
+}
+
+#comp-reasons h4{
+    font-size: 24px;
+    color: #29303B;
+}
+
+/* timeline section */
+#comp-timeline {
+    padding: 4vw;
+}
+
+#comp-timeline h4{
+    font-size: 24px;
+    color: #29303B;
+}
+
+#comp-timeline .timeline-img  {
+    text-align: center;
+}
+
+#comp-timeline .timeline-img img {
+    width: 35%;
+    height: auto;
+}
+
+/* Form Button */
+.comp-form {
+    padding: 4vw 4vw 0 4vw;
+}
+
+.comp-form .rev-button-org {
+    margin-right: 10px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(43, 43, 161);
+    transition: 0.3s ease;
+}
+
+.comp-form .rev-button-org:hover{
+    color: #fff;
+    background-color: rgba(241,131,19,255);
+}
 
 /** media query For Ipad**/
 
@@ -816,7 +1533,7 @@ footer .copyright p{
     
     /* Header */
     #header {
-       padding: 15px 20px;
+        padding: 15px 20px;
     }
 
     #header .logo {
@@ -931,8 +1648,8 @@ footer .copyright p{
     }
 
     #pro-section .profiles .wrapper .card{
-        width: 280px;
-        height: 360px;
+        width: 300px;
+        height: 400px;
         padding: 6rem 3rem;
         position: relative;
         display: flex;
@@ -940,9 +1657,20 @@ footer .copyright p{
         margin: 20px;
     }
 
+    #pro-section .profiles .wrapper .card .info span {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #pro-section .profiles .wrapper .card .info h5 {
+        margin: 0;
+        font-size: 16px;
+    }
+
     #pro-section .profiles .wrapper .card .info p{
         margin-top: 1px;
         margin-bottom: 3px;
+        font-size: 13.2px;
     }
 
     #pro-section .profiles .wrapper .card:hover .info{
@@ -951,6 +1679,67 @@ footer .copyright p{
 
     #pro-section .more-profiles .orange {
         right: 44%;
+    }
+
+    /** About Page **/
+    #about-container .about-img img {
+        height: 230px;
+        width: auto;
+        border-radius: 50px;
+    }
+
+    #about-goals .goals-img img {
+        margin: 50px;
+    }
+
+    #about-goals .goals-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*Team Page*/
+    #teams  h2 {
+        font-size: 40px;
+        margin: 50px 40px;
+    }
+
+    #teams .main-boxs {
+        margin-bottom: 150px;
+    }
+
+    #teams .box .content {
+        width: 100%;
+        height: 90%;
+    }
+
+    /* Majors page*/
+    #major-post p {
+        padding-left: 50px;
+        width: 90%;
+        color: #5a5e67;
+    }
+
+    /* Content Page */
+    #contact {
+        padding: 8vw 4vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #contact .getinf {
+        width: 250px;
+    }
+
+    #contact .form {
+        width: 55%;
+    }
+
+    /*Competition Page*/
+    #comp-timeline .timeline-img img {
+        width: 55%;
+        height: auto;
     }
 
     /* Footer */
@@ -1022,8 +1811,115 @@ footer .copyright p{
         justify-content: center;
     }
 
+    #pro-section .profiles .wrapper .card{
+        margin: 20px auto;
+    }
+
     #pro-section .more-profiles .orange {
         right: 35%;
     }
 
+    #pro-section .profiles .wrapper .card .info span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #pro-section .profiles .wrapper .card .info h5 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #pro-section .profiles .wrapper .card .info p {
+        margin-top: 1px;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    /** About Page **/
+    #about-container{
+        flex-wrap: wrap;
+    }
+
+    #about-container .about-img {
+        margin: 0px auto;
+        width: auto;
+    }
+
+    #about-container .about-text {
+        width: 100%;
+        padding: 60px 20px 60px 20px;
+    }
+
+    #about-container .about-text h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /*Team Page*/
+    #teams  h2 {
+        font-size: 30px;
+        margin: 50px 40px;
+    }
+
+    #teams .main-boxs {
+        margin-bottom: 100px;
+    }
+
+    /* Content Page */
+    #contact{
+        padding: 8vw 4vw;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #contact .getinf {
+        width: 100%;
+        margin-bottom: 50px;
+        padding-left: 10px;
+    }
+
+    #contact .form {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    #contact .form .form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #contact .form .form-row input {
+        width: 100%;
+    }
+
+    /*Competition Page*/
+    #comp-info h4{
+        font-size: 24px;
+    }
+
+    #comp-timeline .timeline-img img {
+        width: 95%;
+        height: auto;
+    }
+
+    #comp-features .featurers-img img {
+        width: 120px;
+        height: auto;
+        margin: 0px auto 0px auto;
+    }
+
+    #comp-features p {
+        color: #626262;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 10px;
+        margin: 0px;
+        background-color: #ffe1b5;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
 }
+
